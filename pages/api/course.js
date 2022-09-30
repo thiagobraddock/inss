@@ -1,9 +1,29 @@
 function course(request, response) {
   const course = [
-    { faixa: 1, contrInicio: 0, contrFim: 1212.0, aliq: 0.075, agreg: 0 },
-    { faixa: 2, contrInicio: 1212.01, contrFim: 2427.35, aliq: 0.09, agreg: 0 },
-    { faixa: 3, contrInicio: 2427.36, contrFim: 3641.03, aliq: 0.12, agreg: 0 },
-    { faixa: 4, contrInicio: 3641.04, contrFim: 7087.22, aliq: 0.14, agreg: 0 },
+    {
+      modulo: 'Fundamentos',
+      descricao:
+        'Nosso primeiro módulo te ensinará tudo que você precisa saber para iniciar sua carreira no mundo do desenvolvimento Web, virando uma pessoa preparada para os módulos de front-end e back-end. Vamos te guiar, etapa a etapa, por toda essa jornada!',
+      color: '#BDD5FF',
+    },
+    {
+      modulo: 'Front-end',
+      descricao:
+        'Neste módulo, você vai aprender as técnicas e ferramentas mais atuais para desenvolver um código de front-end que seja rápido, bonito e testável.',
+      color: '#A0F046',
+    },
+    {
+      modulo: 'Back-end',
+      descricao:
+        'Neste módulo, você vai aprender como desenvolver um código de back-end robusto, limpo, escalável e seguro, dominando o uso de bancos de dados, a construção de APIs com testes automatizados.',
+      color: '#FCF1CF',
+    },
+    {
+      modulo: 'Ciência da Computação',
+      descricao:
+        'Aqui você aprenderá os principais conceitos da Ciência da Computação que são aplicados no dia a dia do desenvolvimento de software e como transformar a teoria em prática, analisando algoritmos e escolhendo as melhores estruturas de dados para resolver os problemas!',
+      color: '#F3C5F3',
+    },
   ];
 
   setTimeout(() => {
