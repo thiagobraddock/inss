@@ -1,8 +1,5 @@
 const course = [
   {
-    quote: 'Front-end é muito mais legal que Back-end',
-  },
-  {
     id: 'fundamentals',
     module: 'Fundamentos',
     description:
@@ -58,6 +55,12 @@ const course = [
 
 export default function handler(req, res) {
   const { id } = req.query;
-  const modulo = course.find((module) => module.id === id);
-  res.status(200).json(modulo);
+  const modulo = course.filter((module) => module.id === id);
+  const retorno = [
+    {
+      quote: 'Front-end é muito mais legal que Back-end',
+    },
+    ...modulo,
+  ];
+  res.status(200).json(retorno);
 }
