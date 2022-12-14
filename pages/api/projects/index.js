@@ -39,4 +39,4 @@ function projects(request, response) {
   }, 1000);
 }
 
-export default course;
+export default projects;
