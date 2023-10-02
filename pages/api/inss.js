@@ -9,11 +9,12 @@ function inss(request, response) {
   let acumulado = 0;
   contribuicao.forEach((faixa) => {
     faixa.agreg = acumulado;
-    acumulado += (faixa.contrFim - faixa.contrInicio) * faixa.aliq;
+    faixa.agreg = +((acumulado += (faixa.contrFim - faixa.contrInicio) * faixa.aliq).toFixed(2));
   });
 
   response.status(200).json({
     ano: 2023,
+    tabelaValida: '04/23',
     contribuicao,
   });
 }
